@@ -13,24 +13,12 @@ Page = React.createClass
           <form ui form onSubmit={(event) -> event.preventDefault()}>
             <div ui two column grid>
               <div column>
-                <div ui inverted fluid card>
-                  <div image>
-                    <img src={"https://static.f-list.net/images/avatar/#{@state.icon}.png?#{Date.now()}"}/>
-                  </div>
-                  <div content>
-                    <a header><input ui inverted input value={"[icon]#{@state.icon}[/icon]"} onChange={->} onClick={@onClick}/></a>
-                  </div>
-                </div>
+                <img src={"https://static.f-list.net/images/avatar/#{@state.icon}.png?#{Date.now()}"}/>
+                <input ui input value={"[icon]#{@state.icon}[/icon]"} onChange={->} onClick={@onClick}/>
               </div>
               <div column>
-                <div ui inverted fluid card>
-                  <div image>
-                    <img src={"https://static.f-list.net/images/eicon/#{@state.icon}.gif?#{Date.now()}"}/>
-                  </div>
-                  <div content>
-                    <a header><input ui inverted input value={"[eicon]#{@state.icon}[/eicon]"} onChange={->} onClick={@onClick}/></a>
-                  </div>
-                </div>
+                <img src={"https://static.f-list.net/images/eicon/#{@state.icon}.gif?#{Date.now()}"}/>
+                <input ui inverted input value={"[eicon]#{@state.icon}[/eicon]"} onChange={->} onClick={@onClick}/>
               </div>
             </div>
             <br/>
