@@ -23,7 +23,7 @@ Page = React.createClass
             </div>
             <br/>
             <div ui field>
-              <input id="icon" ui inverted input onKeyUp={@onChange} placeholder="Icon Name..." />
+              <input id="icon" ui inverted input onKeyUp={@onChange} onClick={@onClick} placeholder="Icon Name..." />
             </div>
           </form>
         </div>
