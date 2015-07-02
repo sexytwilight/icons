@@ -1,12 +1,8 @@
 
-# npm install -save-dev react@latest jquery@latest semantic-ui@latest aui@latest baconjs@latest react-bacon@latest
-Global = global or window
-React = Global.React = require 'react/addons'
-jQuery = Global.jQuery = require 'jquery'
-require 'semantic-ui/dist/semantic.min.js'
+# npm install aui@latest react-bacon@latest
+{React, Aui} = global or window
 exports = module.exports = {
   React
-  Bacon: require 'baconjs'
-  Aui: require 'aui'
+  Aui
+  Bacon: require './bacon.cjsx'
 }
-exports.Bacon.Mixin = require 'react-bacon'
